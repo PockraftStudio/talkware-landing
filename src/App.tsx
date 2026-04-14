@@ -363,7 +363,7 @@ export default function App() {
         <section id="founders" className="py-24 px-6 border-t border-white/5">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-4xl md:text-5xl font-display font-bold mb-6 text-gradient">Founder Members</h2>
+              <h2 className="text-4xl md:text-5xl font-display font-bold mb-6 text-gradient">Founding Members</h2>
               <p className="text-white/60 max-w-2xl mx-auto">The core team behind Talkware, dedicated to building a vibrant creator ecosystem in Mandalay.</p>
             </div>
 
