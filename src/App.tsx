@@ -4,10 +4,12 @@
  */
 
 import { motion } from "motion/react";
-import { ArrowRight, Calendar, Users, Zap, Globe, Instagram, Twitter, Github } from "lucide-react";
+import { ArrowRight, Calendar, Users, Zap, Globe, Instagram, Twitter, Github, Trophy, Rocket } from "lucide-react";
 
 const REGISTER_URL = "https://docs.google.com/forms/d/e/1FAIpQLSdeMitRaFOvZUNX4URyye9C5CGNWmzORsfoJNob0kC1mSNLIg/viewform";
 const COMMUNITY_URL = "https://t.me/talkware";
+const QUEST_JOINER_URL = "https://docs.google.com/forms/d/e/1FAIpQLSe2e9SIhfBCCTQubuNd44S29UlqzmdC46DpWhhuR31YxruEFA/viewform";
+const QUEST_CREATOR_URL = "https://docs.google.com/forms/d/e/1FAIpQLScOzkn_NwSM9p9436L6XUYXy3bIQEI5HSK-Ks7ujq7EMBfo9Q/viewform";
 
 export default function App() {
   const containerVariants = {
@@ -44,6 +46,7 @@ export default function App() {
           <div className="hidden md:flex items-center gap-8 text-sm font-medium text-white/60">
             <a href="#mission" className="hover:text-white transition-colors">Mission</a>
             <a href="#events" className="hover:text-white transition-colors">Events</a>
+            <a href="#quest" className="hover:text-white transition-colors">Quest Studio</a>
             <a href="#highlights" className="hover:text-white transition-colors">Highlights</a>
             <a href="#story" className="hover:text-white transition-colors">Our Story</a>
           </div>
@@ -74,7 +77,7 @@ export default function App() {
           >
             <motion.div variants={itemVariants} className="inline-flex items-center gap-2 px-3 py-1 rounded-full glass text-[10px] font-bold uppercase tracking-widest mb-8">
               <Zap className="w-3 h-3" />
-              <span>Community Program 2026</span>
+              <span>Community Program by Pockraft Studio</span>
             </motion.div>
 
             <motion.h1 variants={itemVariants} className="text-6xl md:text-8xl lg:text-9xl font-display font-bold leading-[0.9] tracking-tighter mb-8 text-gradient">
@@ -235,6 +238,111 @@ export default function App() {
 
 
 
+        {/* Quest Studio Section */}
+        <section id="quest" className="py-24 px-6 border-t border-white/5 bg-white/[0.01]">
+          <div className="max-w-7xl mx-auto">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl md:text-5xl font-display font-bold mb-6 text-gradient">Quest Studio</h2>
+              <p className="text-white/60 max-w-2xl mx-auto text-lg">
+                Join a quest studio to build, learn, and grow with the community.
+                Find your team, contribute to projects, or lead your own vision.
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-8 mb-20">
+              <div className="p-8 glass rounded-3xl border-white/10 hover:border-white/20 transition-all group">
+                <div className="w-12 h-12 bg-white/10 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                  <Users className="w-6 h-6 text-white" />
+                </div>
+                <h3 className="text-2xl font-display font-bold mb-4">Apply as a Contributor</h3>
+                <p className="text-white/50 mb-8 leading-relaxed">
+                  Ready to contribute? Join a Quest Studio group and start building with fellow creators.
+                  Pockraft Studio team will assign you to the corresponding group based on your skills.
+                </p>
+                <a
+                  href={QUEST_JOINER_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-6 py-3 bg-white text-black font-bold rounded-xl hover:bg-white/90 transition-all"
+                >
+                  Join Now <ArrowRight className="w-4 h-4" />
+                </a>
+              </div>
+
+              <div className="p-8 glass rounded-3xl border-white/10 hover:border-white/20 transition-all group">
+                <div className="w-12 h-12 bg-white/10 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                  <Rocket className="w-6 h-6 text-white" />
+                </div>
+                <h3 className="text-2xl font-display font-bold mb-4">Apply as a Co-Creator</h3>
+                <p className="text-white/50 mb-8 leading-relaxed">
+                  Have a vision for a new project? Apply to become a Quest Studio Creator.
+                  Your proposal will be audited by the Pockraft Studio team to ensure alignment and quality.
+                </p>
+                <a
+                  href={QUEST_CREATOR_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-6 py-3 glass font-bold rounded-xl hover:bg-white/10 transition-all"
+                >
+                  Apply to Create <ArrowRight className="w-4 h-4" />
+                </a>
+              </div>
+            </div>
+
+            <div className="space-y-6">
+              <div className="flex items-center gap-4 mb-8">
+                <div className="h-px flex-1 bg-white/10" />
+                <h3 className="text-sm font-bold uppercase tracking-widest text-white/40">Active Quest Studios</h3>
+                <div className="h-px flex-1 bg-white/10" />
+              </div>
+
+              <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                {[
+                  {
+                    name: "Talkware Community Program",
+                    owner: "Pockraft Studio",
+                    status: "Active",
+                    icon: <Rocket className="w-5 h-5" />
+                  },
+                  {
+                    name: "USDT POS App Quest Studio",
+                    owner: "Sir Aung Ko Ko Thet",
+                    status: "Active",
+                    icon: <Trophy className="w-5 h-5" />
+                  },
+                  {
+                    name: "Super App for Business Quest Studio",
+                    owner: "Sir Aung Ko Ko Thet",
+                    status: "Active",
+                    icon: <Zap className="w-5 h-5" />
+                  },
+                  {
+                    name: "New World Program Quest Studio",
+                    owner: "Pockraft Studio",
+                    status: "Active",
+                    icon: <Globe className="w-5 h-5" />
+                  },
+
+                ].map((studio, i) => (
+                  <div key={i} className="p-6 glass rounded-2xl border-white/5 hover:bg-white/[0.08] transition-colors">
+                    <div className="flex items-center justify-between mb-4">
+                      <div className="p-2 bg-white/5 rounded-lg text-white/60">
+                        {studio.icon}
+                      </div>
+                      <span className={`text-[10px] font-bold uppercase tracking-widest px-2 py-0.5 rounded-full ${studio.status === 'Active' ? 'bg-white/20 text-white' : 'bg-white/5 text-white/30'
+                        }`}>
+                        {studio.status}
+                      </span>
+                    </div>
+                    <h4 className="font-display font-bold text-sm mb-1">{studio.name}</h4>
+                    <p className="text-[10px] text-white/40 uppercase font-bold tracking-wider">Created by {studio.owner}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Highlights / Community Journey */}
         <section id="highlights" className="py-24 px-6">
           <div className="max-w-7xl mx-auto">
@@ -291,7 +399,7 @@ export default function App() {
                   place: "The Manner Cafe",
                   time: "1:00 – 3:30 PM",
                   image: "/assets/events/img-013.png",
-                  highlight: "Sir Thiha as Guest Speaker. Joy joined as Co-creator. Launched NewWorld Program & Talkware Protocol.",
+                  highlight: "Sir Thiha as Guest Speaker.New Talkware Co-creators joined. Planned NewWorld Program & Talkware Protocol.",
                 },
               ].map((event, i) => (
                 <motion.div
@@ -337,11 +445,8 @@ export default function App() {
                 <h2 className="text-4xl md:text-5xl font-display font-bold mb-8">Our Story</h2>
                 <div className="space-y-6 text-white/60 text-lg leading-relaxed">
                   <p>
-                    Talkware's journey began at the <span className="text-white font-bold">Venture Base Hackathon</span>,
-                    where our founders won the top prize with the <span className="text-white font-bold">SafeRoute Project</span>.
-                  </p>
-                  <p>
-                    That victory sparked a realization: Mandalay's junior developers needed a supportive ecosystem
+                    Talkware's journey began at the <span className="text-white font-bold">Venture Base Hackathon </span> as <span className="text-white font-bold">VentureOps Team</span> ,
+                    where our founders realized that Mandalay's junior developers needed a supportive ecosystem
                     that didn't yet exist locally — a place to bridge the gap between learning and impact.
                   </p>
                 </div>
@@ -450,6 +555,7 @@ export default function App() {
               <ul className="space-y-4 text-sm text-white/40">
                 <li><a href="#mission" className="hover:text-white transition-colors">Our Mission</a></li>
                 <li><a href="#highlights" className="hover:text-white transition-colors">Highlights</a></li>
+                <li><a href="#quest" className="hover:text-white transition-colors">Quest Studio</a></li>
                 <li><a href="#story" className="hover:text-white transition-colors">Our Story</a></li>
                 <li><a href="#founders" className="hover:text-white transition-colors">The Team</a></li>
               </ul>
