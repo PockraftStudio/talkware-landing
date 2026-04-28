@@ -6,7 +6,7 @@
 import { motion } from "motion/react";
 import { ArrowRight, Calendar, Users, Zap, Globe, Instagram, Twitter, Github, Trophy, Rocket, Mail, Phone } from "lucide-react";
 
-const REGISTER_URL = "https://docs.google.com/forms/d/e/1FAIpQLSdeMitRaFOvZUNX4URyye9C5CGNWmzORsfoJNob0kC1mSNLIg/viewform";
+const REGISTER_URL = "https://docs.google.com/forms/d/e/1FAIpQLSc36OmsSG-1iLlA2_THVL3JKlGkR0-JWfd1IyrEOyZtPKjfnw/viewform?usp=header";
 const COMMUNITY_URL = "https://t.me/talkware";
 
 
