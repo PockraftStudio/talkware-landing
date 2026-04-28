@@ -4,7 +4,7 @@
  */
 
 import { motion } from "motion/react";
-import { ArrowRight, Calendar, Users, Zap, Globe, Instagram, Twitter, Github, Trophy, Rocket } from "lucide-react";
+import { ArrowRight, Calendar, Users, Zap, Globe, Instagram, Twitter, Github, Trophy, Rocket, Mail, Phone } from "lucide-react";
 
 const REGISTER_URL = "https://docs.google.com/forms/d/e/1FAIpQLSdeMitRaFOvZUNX4URyye9C5CGNWmzORsfoJNob0kC1mSNLIg/viewform";
 const COMMUNITY_URL = "https://t.me/talkware";
@@ -48,6 +48,7 @@ export default function App() {
 
             <a href="#highlights" className="hover:text-white transition-colors">Highlights</a>
             <a href="#story" className="hover:text-white transition-colors">Our Story</a>
+            <a href="#contact" className="hover:text-white transition-colors">Contact</a>
           </div>
           <a
             href={COMMUNITY_URL}
@@ -439,6 +440,77 @@ export default function App() {
             </div>
           </div>
         </section >
+
+        {/* Contact Us Section */}
+        <section id="contact" className="py-24 px-6 border-t border-white/5">
+          <div className="max-w-7xl mx-auto">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="text-center mb-16"
+            >
+              <h2 className="text-4xl md:text-5xl font-display font-bold mb-4 text-gradient">Contact Us</h2>
+              <p className="text-white/50 max-w-xl mx-auto text-lg">Have questions or want to collaborate? Reach out — we'd love to hear from you.</p>
+            </motion.div>
+
+            <div className="grid sm:grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+              {/* Email */}
+              <motion.a
+                href="mailto:team.itpocket@gmail.com"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0 }}
+                className="flex flex-col items-center gap-4 p-8 glass rounded-2xl hover:bg-white/[0.08] transition-all group cursor-pointer"
+              >
+                <div className="w-14 h-14 rounded-full glass flex items-center justify-center group-hover:scale-110 transition-transform">
+                  <Mail className="w-6 h-6 text-white" />
+                </div>
+                <div className="text-center">
+                  <p className="text-[10px] font-bold uppercase tracking-widest text-white/40 mb-2">Email</p>
+                  <p className="font-bold text-white text-sm break-all">team.itpocket@gmail.com</p>
+                </div>
+              </motion.a>
+
+              {/* Phone 1 */}
+              <motion.a
+                href="tel:+959792470107"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.1 }}
+                className="flex flex-col items-center gap-4 p-8 glass rounded-2xl hover:bg-white/[0.08] transition-all group cursor-pointer"
+              >
+                <div className="w-14 h-14 rounded-full glass flex items-center justify-center group-hover:scale-110 transition-transform">
+                  <Phone className="w-6 h-6 text-white" />
+                </div>
+                <div className="text-center">
+                  <p className="text-[10px] font-bold uppercase tracking-widest text-white/40 mb-2">Phone</p>
+                  <p className="font-bold text-white text-sm">+95 979 247 010 7</p>
+                </div>
+              </motion.a>
+
+              {/* Phone 2 */}
+              <motion.a
+                href="tel:+959789910866"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.2 }}
+                className="flex flex-col items-center gap-4 p-8 glass rounded-2xl hover:bg-white/[0.08] transition-all group cursor-pointer"
+              >
+                <div className="w-14 h-14 rounded-full glass flex items-center justify-center group-hover:scale-110 transition-transform">
+                  <Phone className="w-6 h-6 text-white" />
+                </div>
+                <div className="text-center">
+                  <p className="text-[10px] font-bold uppercase tracking-widest text-white/40 mb-2">Phone</p>
+                  <p className="font-bold text-white text-sm">+959 789 910 866</p>
+                </div>
+              </motion.a>
+            </div>
+          </div>
+        </section>
       </main >
 
       {/* Footer */}
@@ -465,7 +537,7 @@ export default function App() {
               <ul className="space-y-4 text-sm text-white/40">
                 <li><a href="#mission" className="hover:text-white transition-colors">Our Mission</a></li>
                 <li><a href="#highlights" className="hover:text-white transition-colors">Highlights</a></li>
-                <li></li>
+                <li><a href="#contact" className="hover:text-white transition-colors">Contact Us</a></li>
                 <li><a href="#story" className="hover:text-white transition-colors">Our Story</a></li>
                 <li><a href="#founders" className="hover:text-white transition-colors">The Team</a></li>
               </ul>
