@@ -175,18 +175,18 @@ export default function App() {
             <div className="grid md:grid-cols-2 gap-8 mb-16">
               {[
                 {
-                  title: "Talkware Community Launch",
-                  date: "April 19, 2026 • 1:00 PM",
+                  title: "Talkware Community Meetup",
+                  date: "May 17, 2026 • 1:00 PM",
                   type: "Launch Event",
-                  location: "The Cups Cafe, Mandalay",
-                  desc: "Launching ONE APP, ONE PROGRAM, and TWO QUEST STUDIOS. Find your team and build your idea."
+                  location: "TBA, Mandalay",
+                  desc: "TBA"
                 },
                 {
-                  title: "Product Builders' Stack",
-                  date: "April 19, 2026 • 2:00 PM",
-                  type: "Speaker Session",
+                  title: "Hacking Industrial IIoT Tech for Oyster Mushroom Microfactories",
+                  date: "May 2, 2026 • 6:00 PM",
+                  type: "Webniar",
                   speaker: "Sayar Aung Ko Ko Thet",
-                  desc: "Join Sayar Aung Ko Ko Thet for a deep dive into the tools and strategies for modern product building."
+                  desc: "Join Sir Aung Ko Ko Thet for an in-depth session on the 'Design Project' approach to implementing Industrial IIoT systems. Organized by Talkware Team."
                 }
               ].map((event, i) => (
                 <div key={i} className="p-8 border border-black/10 rounded-3xl hover:border-black/30 transition-colors group">
@@ -308,7 +308,7 @@ export default function App() {
                   date: "Apr 19, 2026",
                   place: "The Cups Cafe",
                   time: "1:00 – 3:30 PM",
-                  image: "/assets/events/img-014.png",
+                  image: "/assets/events/img-014.jpg",
                   highlight: "Sir AKKT as Guest Speaker. Introduced the Solution ,Product Builder's Stack ",
                 },
               ].map((event, i) => (
