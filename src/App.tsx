@@ -178,13 +178,13 @@ export default function App() {
                   title: "Talkware Community Meetup",
                   date: "May 17, 2026 • 1:00 PM",
                   type: "Launch Event",
-                  location: "TBA, Mandalay",
-                  desc: "TBA"
+                  location: "Location : To Be Announced (Mandalay)",
+                  desc: "To Be Announced"
                 },
                 {
                   title: "Hacking Industrial IIoT Tech for Oyster Mushroom Microfactories",
                   date: "May 2, 2026 • 6:00 PM",
-                  type: "Webniar",
+                  type: "Webinar",
                   speaker: "Sayar Aung Ko Ko Thet",
                   desc: "Join Sir Aung Ko Ko Thet for an in-depth session on the 'Design Project' approach to implementing Industrial IIoT systems. Organized by Talkware Team."
                 }
